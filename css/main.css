@@ -211,7 +211,7 @@ textarea {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+.Clearfix {
     *zoom: 1;
 }
 
@@ -426,8 +426,7 @@ float: right;
 }
 
 form {
-    margin-top: 16px;
-    margin: 0px auto;
+    margin-right: 45px
 }
 
 .form-item{
