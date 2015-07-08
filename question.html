@@ -1,0 +1,160 @@
+<!doctype html>
+<html  class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CS490 Alpha</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/landing-page.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Welcome [User Name]</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="">Logout<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <a name="about"></a>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form role="form" class="form-horizontal" id="question-form" name="question-form" action="" method="POST">
+                            <div class="form-group">
+                                <label for="question-name" class="col-sm-2 control-label">Current ID:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="" placeholder="Instructor ID HERE" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-name" class="col-sm-2 control-label">Question Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="" placeholder="Insert Question">
+                                </div>
+                            </div>
+                              <div class="form-group">
+                                <label for="question-description" class="col-sm-2 control-label">Question Description</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" id="" placeholder="Insert Question Description Here"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-name" class="col-sm-2 control-label">Function Name</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" placeholder="Insert The Name of The Function">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-name" class="col-sm-2 control-label">Variable Name</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" placeholder="Variable To Be Specifically Used">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-name" class="col-sm-2 control-label">Answer</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="" placeholder="Answer To The Current Question">
+                                </div>
+                            </div>                                                                                    
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                            <!--<form role="form" class=""  id="question-form"  name="question-form"  action="" method= "POST">
+                                <fieldset class="form-inline form-inline-center">
+                                    <legend class="control-label">Choose Type</legend>
+                                    <div class="radio radio-center">
+                                        <label class="radio" ><input id="create-question" type="radio"  name="choose" value="Function">Function</label>
+                                        <label class="radio" ><input id="create-question" type="radio"  name="choose" value="Loop">Loop</label>
+                                        <label class="radio" ><input id="create-question" type="radio"  name="choose" value="Conditional">Conditional</label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-inline form-inline-center">
+                                    <legend class="control-label">Data Type</legend>
+                                    <div class="radio radio-center">
+                                        <label class="radio" ><input id="create-question" type="radio"  name="type" value="String">String</label>
+                                        <label class="radio" ><input id="create-question" type="radio"  name="type" value="Integer">Integer</label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form form-inline-center">
+                                    <legend class="control-label">Choose Question</legend>
+                                    <div class="radio">
+                                        <label class="" ><input id="create-question" type="radio"  name="question" value="HelloString">HelloString</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label class="" ><input id="create-question" type="radio"  name="question" value="UpperString">UpperString</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label class="" ><input id="create-question" type="radio"  name="question" value="ConcatString">ConcatString</label>
+                                    </div>
+                                    <div class="radio">                                        
+                                        <label class="" ><input id="create-question" type="radio"  name="question" value="SubString">SubString</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label class="" ><input id="create-question" type="radio"  name="question" value="EndingString">EndingString</label>
+                                    </div>
+                                    <div class="radio">
+                                       <label class=""><input id="create-question" type="radio"  name="question" value="BeginString">BeginString</label>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="singlebutton"></label>
+                                        <div class="col-md-4 center-block">
+                                            <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                                                Next Step!
+                                            </button>
+                                        </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+    <!-- /.intro-header -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>-->
+    </body>
+</html>

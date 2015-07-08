@@ -305,149 +305,73 @@ textarea {
 }
 
 
-body{
+.pattern-bg{
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+}
 
-background-size: cover;
-background-position: top center;
-min-width: 1366px;
-background-color:rgba(224, 224, 224, 1);
+.vertical-align-center{
+      position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-p{
-  color:#000;
-}
-#site-wrapper{
-  margin: 0px auto;
-  width: 1197px;
-}
-#wrapper {
-   margin-top: 54px;
-   width: 1197px;
-   height:474px;
-   margin-left: auto;
-   margin-right: auto;
-   background-color: #F4F2F2;
-}
-#nav_wrapper{
-
-}
-    #header{
-        margin:0px;
-        padding:0px;
-        background-color: rgb(11, 11, 102);
-        height: 87px;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    #title{
-        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-        font-size: 32px;
-        float:left;
-        line-height: 89px;
-        margin-left: 20px;
-}
-#title a{
-      text-decoration: none;
-      color:#fff;
-}
-#title a:hover{
-    text-decoration: hover;
+.text-white{
     color:#fff;
 }
-#primary_links {
-    height: 53px;
-    line-height: 74px;
-    float: right;
-    margin-right: 25px;
-    margin-top: 10px;
-}
-#primary_links li {
-  display: inline;
-  font-size:16px;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-}
 
-#primary_links ul {
-  margin: 0px;
+form{
+    width:100%;
 }
-
-#primary_links .mid {
- margin-left: 25px;
- margin-right: 35px;
-}
-#primary_links a {
- text-decoration: none;
- color:#fff;
-}
-#primary_links a:hover{
- text-decoration: underline;
-}
-.content {
-  float:left;
-  width: 739px;
-  margin-left:24px;
-  //margin-right:24px;
-}
-
-.content p {
-  font-family: "Georgia", serif;
-}
-.content ul{
-
-}
-.content ul li{
-  font-family: "Georgia", serif;
-
-}
-.content a {
-  color:yellow;
-  text-decoration: none;
-}
-
-.article_title{
-  font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
-  font-weight:bold;
-  font-size: 34px;
-  line-height: 33px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.container {
-        width: 593px;
-        clear: both;
-    }
-    .container input, select {
-        clear: both;
-        margin: 10px 0px 5px 25px;
-    }
-.sidebar{
-width:400px;
-float: right;
-}
-
-form {
-    margin-right: 45px
-}
-
 .form-item{
 margin-top: 20px;
 }
 
+@media(max-width:767px) {
+input{
+    width:100%;
+}
+}
+
 input {
-    /* in order to define widths */
-    display: inline-block;
-    width: 100%;
-    border: 1px solid #AFAFAF;
-    border-radius: 3px;
+//width: 100%;
+border: 1px solid #AFAFAF;
+font-size: 32px;
+font-family: sans-serif;
+}
+input[type=""] {
+   
 }
 
 label {
-display: inline-block;
-width: 15%;
 text-align: center;
 margin-left: 0px;
-white-space: nowrap;
-text-overflow: ellipsis;
+font-size: 20px;
+padding: 5px;
+}
+
+legend{
+margin: 0;
+}
+
+
+#question-form{
+ background-color:#fff;
+ padding: 20px 0px 60px 0px;
+}
+#question-form .form-inline-center{
+margin: 0px auto;
+width: 451px;
+padding: 10px 0px 20px 0px;
+border: 1px solid #000;
+}
+fieldset.form-inline{
+    padding: 0 10px;
+}
+legend{
+    width: auto;
+}
+.radio-center{
+width: 100%;
+padding: 0px 20px 0px 20px;
 }
 
 .button{
@@ -469,19 +393,67 @@ background-image: none;
 border: 1px solid transparent;
 border-radius: 4px;
 width: 100%;
-background-image: -webkit-linear-gradient(top, #FFCC00 0%,#F1CD43 100%);
+background-image: -webkit-linear-gradient(top,#92BCC8 0%,#1E6EFF 100%);
+font-size:20px;
+color:#fff;
 }
-#login_title{
-color: #fff;
-font-size: 24px;
-line-height: 24px;
-text-align: right;
+
+#msg{
+color: rgb(247, 247, 28);
+background-color: white;
+background-color: rgba(255, 255, 255, 0);
+text-shadow: 2px 2px 3px rgba(17, 10, 10, 1);
+font-family: sans-serif;
+text-transform: uppercase;
+font-size: larger;
 }
-table{
-  color:#fff;
-  border: 1px solid;
-  margin-top:40px;
+
+#instructions{
+
 }
-tr{
-  text-align:center;
+#publish-exam-area{
+    background-color: #fff;
+    color:#000;
 }
+#preview-questions{
+     visibility:hidden; 
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     text-align:center;
+     z-index: 200;
+     background-image:url(../img/maskBG.png);    
+}
+
+#preview-questions div {
+   position:fixed;
+    top:50%;
+    left:50%;
+    background-color: #fff;
+    margin-top:-150px;
+    margin-left:-250px;
+    width:500px; 
+    height:300px;
+    overflow-y:scroll;
+}
+.notop-margin{
+    margin-top:0px;
+}
+
+.column-scroll{
+overflow-y: scroll;
+height: 593px;
+}
+
+.createtest-area{
+padding-top: 10%;
+padding-bottom: 20%;
+margin: 0px auto;
+}
+
+.flex{
+display:flex;
+}
+
